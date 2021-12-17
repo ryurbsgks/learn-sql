@@ -1,0 +1,446 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 15,
+    "passes": 5,
+    "pending": 0,
+    "failures": 11,
+    "start": "2021-12-17T05:50:40.777Z",
+    "end": "2021-12-17T05:50:41.048Z",
+    "duration": 271
+  },
+  "tests": [
+    {
+      "title": "should be successful by initialize factoryService instance.",
+      "fullTitle": "part 3. 데이터베이스 연결과 스키마 part 3-1. connection test should be successful by initialize factoryService instance.",
+      "duration": 65,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be successful to query via factoryService instance.",
+      "fullTitle": "part 3. 데이터베이스 연결과 스키마 part 3-1. connection test should be successful to query via factoryService instance.",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Q 3-1. 현재 있는 데이터베이스에 존재하는 모든 테이블 정보를 보기위한 SQL을 작성해주세요.",
+      "fullTitle": "part 3. 데이터베이스 연결과 스키마 part 3-2. schema Q 3-1. 현재 있는 데이터베이스에 존재하는 모든 테이블 정보를 보기위한 SQL을 작성해주세요.",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Q 3-2. user 테이블의 구조를 보기위한 SQL을 작성해주세요. \n    요구사항에 맞는 user 테이블을 작성해야만, 테스트를 통과합니다.",
+      "fullTitle": "part 3. 데이터베이스 연결과 스키마 part 3-2. schema Q 3-2. user 테이블의 구조를 보기위한 SQL을 작성해주세요. \n    요구사항에 맞는 user 테이블을 작성해야만, 테스트를 통과합니다.",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Q 3-3. content 테이블의 구조를 보기위한 SQL을 작성해주세요. \n    요구사항에 맞는 content 테이블을 작성해야만, 테스트를 통과합니다.",
+      "fullTitle": "part 3. 데이터베이스 연결과 스키마 part 3-2. schema Q 3-3. content 테이블의 구조를 보기위한 SQL을 작성해주세요. \n    요구사항에 맞는 content 테이블을 작성해야만, 테스트를 통과합니다.",
+      "duration": 4,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Q 4-1. user 테이블에 존재하는 모든 컬럼을 포함한 모든 데이터를 확인하기 위한 SQL을 작성해주세요.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-1. user 테이블에 존재하는 모든 컬럼을 포함한 모든 데이터를 확인하기 위한 SQL을 작성해주세요.",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:38:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-2. user 테이블에 존재하는 모든 데이터에서 name 컬럼만을 확인하기 위한 SQL을 작성해주세요.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-2. user 테이블에 존재하는 모든 데이터에서 name 컬럼만을 확인하기 위한 SQL을 작성해주세요.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:56:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-3. user 테이블에 데이터를 추가하기 위한 SQL을 작성해주세요.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-3. user 테이블에 데이터를 추가하기 위한 SQL을 작성해주세요.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:73:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-4. user 테이블에서 특정 조건을 가진 데이터를 찾기위한 SQL을 작성해주세요. \n    조건 : name이 duhyunkim이여야 합니다.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-4. user 테이블에서 특정 조건을 가진 데이터를 찾기위한 SQL을 작성해주세요. \n    조건 : name이 duhyunkim이여야 합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:98:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-5. user 테이블에서 특정 조건을 가진 데이터를 찾기위한 SQL을 작성해주세요. \n    조건 : name이 duhyunkim이 아니여야 합니다.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-5. user 테이블에서 특정 조건을 가진 데이터를 찾기위한 SQL을 작성해주세요. \n    조건 : name이 duhyunkim이 아니여야 합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:118:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-6. content 테이블에 존재하는 모든 데이터에서 title 컬럼만을 찾기 위한 SQL을 작성해주세요.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-6. content 테이블에 존재하는 모든 데이터에서 title 컬럼만을 찾기 위한 SQL을 작성해주세요.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:140:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-7. content의 title과 그 컨텐츠를 작성한 user의 name을 찾기 위한 SQL을 작성해주세요. \n    저자가 없더라도, 켄턴츠의 title을 모두 찾아야합니다.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-7. content의 title과 그 컨텐츠를 작성한 user의 name을 찾기 위한 SQL을 작성해주세요. \n    저자가 없더라도, 켄턴츠의 title을 모두 찾아야합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:163:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-8. content의 title과 그 컨텐츠를 작성한 user의 name을 찾기 위한 SQL을 작성해주세요. \n    저자가 있는 컨텐츠의 title만 찾아야합니다.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-8. content의 title과 그 컨텐츠를 작성한 user의 name을 찾기 위한 SQL을 작성해주세요. \n    저자가 있는 컨텐츠의 title만 찾아야합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:187:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-9. content의 데이터를 수정하기 위한 SQL을 작성해주세요. \n   - title이 database sprint인 content 데이터에서 body를 \"database is very easy\"로 수정해야합니다.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-9. content의 데이터를 수정하기 위한 SQL을 작성해주세요. \n   - title이 database sprint인 content 데이터에서 body를 \"database is very easy\"로 수정해야합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:207:26)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-10. content의 데이터를 추가하기 위한 SQL을 작성해주세요. \n   - duhyunkim이 작성한 컨텐츠를 추가해주세요. 제목과 본문은 자유입니다. (참고: duhyunkim의 아이디는 1입니다.)",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-10. content의 데이터를 추가하기 위한 SQL을 작성해주세요. \n   - duhyunkim이 작성한 컨텐츠를 추가해주세요. 제목과 본문은 자유입니다. (참고: duhyunkim의 아이디는 1입니다.)",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:234:26)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "Q 4-1. user 테이블에 존재하는 모든 컬럼을 포함한 모든 데이터를 확인하기 위한 SQL을 작성해주세요.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-1. user 테이블에 존재하는 모든 컬럼을 포함한 모든 데이터를 확인하기 위한 SQL을 작성해주세요.",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:38:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-2. user 테이블에 존재하는 모든 데이터에서 name 컬럼만을 확인하기 위한 SQL을 작성해주세요.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-2. user 테이블에 존재하는 모든 데이터에서 name 컬럼만을 확인하기 위한 SQL을 작성해주세요.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:56:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-3. user 테이블에 데이터를 추가하기 위한 SQL을 작성해주세요.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-3. user 테이블에 데이터를 추가하기 위한 SQL을 작성해주세요.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:73:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-4. user 테이블에서 특정 조건을 가진 데이터를 찾기위한 SQL을 작성해주세요. \n    조건 : name이 duhyunkim이여야 합니다.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-4. user 테이블에서 특정 조건을 가진 데이터를 찾기위한 SQL을 작성해주세요. \n    조건 : name이 duhyunkim이여야 합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:98:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-5. user 테이블에서 특정 조건을 가진 데이터를 찾기위한 SQL을 작성해주세요. \n    조건 : name이 duhyunkim이 아니여야 합니다.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-5. user 테이블에서 특정 조건을 가진 데이터를 찾기위한 SQL을 작성해주세요. \n    조건 : name이 duhyunkim이 아니여야 합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:118:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-6. content 테이블에 존재하는 모든 데이터에서 title 컬럼만을 찾기 위한 SQL을 작성해주세요.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-6. content 테이블에 존재하는 모든 데이터에서 title 컬럼만을 찾기 위한 SQL을 작성해주세요.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:140:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-7. content의 title과 그 컨텐츠를 작성한 user의 name을 찾기 위한 SQL을 작성해주세요. \n    저자가 없더라도, 켄턴츠의 title을 모두 찾아야합니다.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-7. content의 title과 그 컨텐츠를 작성한 user의 name을 찾기 위한 SQL을 작성해주세요. \n    저자가 없더라도, 켄턴츠의 title을 모두 찾아야합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:163:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-8. content의 title과 그 컨텐츠를 작성한 user의 name을 찾기 위한 SQL을 작성해주세요. \n    저자가 있는 컨텐츠의 title만 찾아야합니다.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-8. content의 title과 그 컨텐츠를 작성한 user의 name을 찾기 위한 SQL을 작성해주세요. \n    저자가 있는 컨텐츠의 title만 찾아야합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:187:42)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-9. content의 데이터를 수정하기 위한 SQL을 작성해주세요. \n   - title이 database sprint인 content 데이터에서 body를 \"database is very easy\"로 수정해야합니다.",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-9. content의 데이터를 수정하기 위한 SQL을 작성해주세요. \n   - title이 database sprint인 content 데이터에서 body를 \"database is very easy\"로 수정해야합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:207:26)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "Q 4-10. content의 데이터를 추가하기 위한 SQL을 작성해주세요. \n   - duhyunkim이 작성한 컨텐츠를 추가해주세요. 제목과 본문은 자유입니다. (참고: duhyunkim의 아이디는 1입니다.)",
+      "fullTitle": "part 4 - 스키마와 함께하는 기본 SQL Q 4-10. content의 데이터를 추가하기 위한 SQL을 작성해주세요. \n   - duhyunkim이 작성한 컨텐츠를 추가해주세요. 제목과 본문은 자유입니다. (참고: duhyunkim의 아이디는 1입니다.)",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at Context.<anonymous> (__tests__/part4.test.js:234:26)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "code": "ER_PARSE_ERROR",
+        "errno": 1064,
+        "sqlMessage": "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FILL IN THIS' at line 1",
+        "sqlState": "42000",
+        "index": 0,
+        "sql": "FILL IN THIS",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "\"before all\" hook in \"part 5 - 추가 요구조건과 스키마\"",
+      "fullTitle": "part 5 - 추가 요구조건과 스키마 \"before all\" hook in \"part 5 - 추가 요구조건과 스키마\"",
+      "duration": 46,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: ER_NO_SUCH_TABLE: Table 'learnmysql.role' doesn't exist\n    at Query.Sequence._packetToError (node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)\n    at Query.ErrorPacket (node_modules/mysql/lib/protocol/sequences/Query.js:79:18)\n    at Protocol._parsePacket (node_modules/mysql/lib/protocol/Protocol.js:291:23)\n    at Parser._parsePacket (node_modules/mysql/lib/protocol/Parser.js:433:10)\n    at Parser.write (node_modules/mysql/lib/protocol/Parser.js:43:10)\n    at Protocol.write (node_modules/mysql/lib/protocol/Protocol.js:38:16)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:88:28)\n    at Socket.<anonymous> (node_modules/mysql/lib/Connection.js:526:10)\n    at Socket.emit (node:events:390:28)\n    at addChunk (node:internal/streams/readable:315:12)\n    at readableAddChunk (node:internal/streams/readable:289:9)\n    at Socket.Readable.push (node:internal/streams/readable:228:10)\n    at TCP.onStreamRead (node:internal/stream_base_commons:199:23)\n    --------------------\n    at Protocol._enqueue (node_modules/mysql/lib/protocol/Protocol.js:144:48)\n    at Connection.query (node_modules/mysql/lib/Connection.js:198:25)\n    at /home/ryurbsgks/다운로드/section3/im-sprint-learn-sql/lib/common/mysql.js:69:23\n    at new Promise (<anonymous>)\n    at FactoryService.query (lib/common/mysql.js:68:12)\n    at FactoryService.create (__tests__/helper/FactoryService.js:45:23)\n    at FactoryService.insert (__tests__/helper/FactoryService.js:69:26)\n    at FactoryService.part5_setup (__tests__/helper/FactoryService.js:134:26)\n    at Context.<anonymous> (__tests__/part5.test.js:28:26)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+        "message": "ER_NO_SUCH_TABLE: Table 'learnmysql.role' doesn't exist",
+        "code": "ER_NO_SUCH_TABLE",
+        "errno": 1146,
+        "sqlMessage": "Table 'learnmysql.role' doesn't exist",
+        "sqlState": "42S02",
+        "index": 0,
+        "sql": "INSERT INTO role (id,name) VALUES (1,'attacker'),(2,'defense')",
+        "uncaught": true
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "should be successful by initialize factoryService instance.",
+      "fullTitle": "part 3. 데이터베이스 연결과 스키마 part 3-1. connection test should be successful by initialize factoryService instance.",
+      "duration": 65,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be successful to query via factoryService instance.",
+      "fullTitle": "part 3. 데이터베이스 연결과 스키마 part 3-1. connection test should be successful to query via factoryService instance.",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Q 3-1. 현재 있는 데이터베이스에 존재하는 모든 테이블 정보를 보기위한 SQL을 작성해주세요.",
+      "fullTitle": "part 3. 데이터베이스 연결과 스키마 part 3-2. schema Q 3-1. 현재 있는 데이터베이스에 존재하는 모든 테이블 정보를 보기위한 SQL을 작성해주세요.",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Q 3-2. user 테이블의 구조를 보기위한 SQL을 작성해주세요. \n    요구사항에 맞는 user 테이블을 작성해야만, 테스트를 통과합니다.",
+      "fullTitle": "part 3. 데이터베이스 연결과 스키마 part 3-2. schema Q 3-2. user 테이블의 구조를 보기위한 SQL을 작성해주세요. \n    요구사항에 맞는 user 테이블을 작성해야만, 테스트를 통과합니다.",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Q 3-3. content 테이블의 구조를 보기위한 SQL을 작성해주세요. \n    요구사항에 맞는 content 테이블을 작성해야만, 테스트를 통과합니다.",
+      "fullTitle": "part 3. 데이터베이스 연결과 스키마 part 3-2. schema Q 3-3. content 테이블의 구조를 보기위한 SQL을 작성해주세요. \n    요구사항에 맞는 content 테이블을 작성해야만, 테스트를 통과합니다.",
+      "duration": 4,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
